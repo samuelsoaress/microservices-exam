@@ -1,6 +1,8 @@
 package com.cap.desafio.model;
 
 public class Request {
+	private String nome;
+	
 	private String email;
 
 	private int codigoProva;
@@ -39,6 +41,14 @@ public class Request {
 
 	public void setEmailGestor(String emailGestor) {
 		this.emailGestor = emailGestor;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 	
 	

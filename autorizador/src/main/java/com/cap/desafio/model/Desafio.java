@@ -11,6 +11,8 @@ public class Desafio {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer codigo;
+	
+	private String nome;
 
 	private String email;
 
@@ -68,6 +70,14 @@ public class Desafio {
 
 	public void setEmailGestor(String emailGestor) {
 		this.emailGestor = emailGestor;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 }

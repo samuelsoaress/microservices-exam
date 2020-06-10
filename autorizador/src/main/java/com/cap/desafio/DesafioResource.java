@@ -32,6 +32,7 @@ public class DesafioResource {
 		Desafio model = new Desafio();
 		model.setAutorizador(Base64.getEncoder().encodeToString(String.valueOf(
 				new Date().getTime()).getBytes()));
+		model.setNome(autorizador.getNome());
 		model.setCodigoProva(autorizador.getCodigoProva());
 		model.setEmail(autorizador.getEmail());
 		model.setEmailGestor(autorizador.getEmailGestor());
