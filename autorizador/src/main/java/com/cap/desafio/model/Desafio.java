@@ -1,5 +1,7 @@
 package com.cap.desafio.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,6 +21,8 @@ public class Desafio {
 	private String autorizador;
 
 	private int codigoProva;
+	
+	private Date dataHora;
 
 	private String tempoRestante;
 
@@ -78,6 +82,14 @@ public class Desafio {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public Date getDataHora() {
+		return dataHora;
+	}
+
+	public void setDataHora(Date dateHora) {
+		this.dataHora = dateHora;
 	}
 
 }

@@ -1,6 +1,8 @@
 package com.cap.desafio;
 
+import java.sql.Timestamp;
 import java.util.Base64;
+
 import java.util.Date;
 import java.util.List;
 
@@ -35,6 +37,8 @@ public class DesafioResource {
 		model.setNome(autorizador.getNome());
 		model.setCodigoProva(autorizador.getCodigoProva());
 		model.setEmail(autorizador.getEmail());
+		Timestamp stamp = new Timestamp(System.currentTimeMillis());
+		model.setDataHora(new Date(stamp.getTime()));
 		model.setEmailGestor(autorizador.getEmailGestor());
 		model.setTempoRestante(autorizador.getTempoRestante());
 		repositorio.save(model);

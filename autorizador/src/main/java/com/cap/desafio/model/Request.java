@@ -1,11 +1,15 @@
 package com.cap.desafio.model;
 
+import java.util.Date;
+
 public class Request {
 	private String nome;
 	
 	private String email;
 
 	private int codigoProva;
+	
+	private Date dataHora;
 
 	private String tempoRestante;
 
@@ -49,6 +53,14 @@ public class Request {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public Date getDataHora() {
+		return dataHora;
+	}
+
+	public void setDataHora(Date dataHora) {
+		this.dataHora = dataHora;
 	}
 	
 	
